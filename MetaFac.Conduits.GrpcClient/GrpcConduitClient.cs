@@ -1,13 +1,12 @@
-﻿using Conduits.Core;
-using Conduits.GrpcCommon;
-using Grpc.Net.Client;
+﻿using Grpc.Net.Client;
+using MetaFac.Conduits.GrpcCommon;
 using MetaFac.Platform;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
-namespace Conduits.GrpcClient
+namespace MetaFac.Conduits.GrpcClient
 {
     public class GrpcConduitClient : IDisposable, IConduitClient
     {

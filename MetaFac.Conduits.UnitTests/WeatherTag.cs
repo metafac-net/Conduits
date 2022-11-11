@@ -1,4 +1,4 @@
-﻿namespace Conduits.Tests
+﻿namespace MetaFac.Conduits.UnitTests
 {
     public enum WeatherTag
     {

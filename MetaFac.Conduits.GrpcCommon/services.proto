@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option csharp_namespace = "Conduits.GrpcCommon";
+option csharp_namespace = "MetaFac.Conduits.GrpcCommon";
 
 package conduits;
 

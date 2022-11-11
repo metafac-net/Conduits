@@ -1,11 +1,11 @@
-﻿using Conduits.Core;
+﻿using MetaFac.Conduits;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Conduits.Tests
+namespace MetaFac.Conduits.UnitTests
 {
     public class WeatherClient : IWeatherService, IDisposable
     {

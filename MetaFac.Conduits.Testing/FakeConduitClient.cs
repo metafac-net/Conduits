@@ -1,9 +1,8 @@
-﻿using Conduits.Core;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Conduits.Testing
+namespace MetaFac.Conduits.Testing
 {
     public class FakeConduitClient : IConduitClient, IDisposable
     {

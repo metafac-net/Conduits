@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Conduits.HttpCommon
+namespace MetaFac.Conduits.HttpCommon
 {
     public class JsonPayload
     {

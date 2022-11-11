@@ -1,10 +1,10 @@
-﻿using Conduits.Core;
+﻿using MetaFac.Conduits;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Conduits.Tests
+namespace MetaFac.Conduits.UnitTests
 {
     internal sealed class ConduitServer : IConduitServer, IDisposable
     {

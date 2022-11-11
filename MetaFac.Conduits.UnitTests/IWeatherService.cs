@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Conduits.Tests
+namespace MetaFac.Conduits.UnitTests
 {
     public interface IWeatherService
     {

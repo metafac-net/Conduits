@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Conduits.Tests
+namespace MetaFac.Conduits.UnitTests
 {
     public sealed record WeatherData
     {
@@ -36,7 +36,7 @@ namespace Conduits.Tests
 
         public static WeatherData FromSpan(ReadOnlySpan<byte> input)
         {
-            if (input.IsEmpty) return WeatherData.Empty;
+            if (input.IsEmpty) return Empty;
             string decoded = Encoding.UTF8.GetString(input.ToArray());
             var fields = decoded.Split('|');
             return new WeatherData(

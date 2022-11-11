@@ -8,7 +8,7 @@ using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 
-namespace Conduits.Tests
+namespace MetaFac.Conduits.UnitTests
 {
     public class WeatherService : IWeatherService, IDisposable
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
-namespace Conduits.GrpcCommon
+namespace MetaFac.Conduits.GrpcCommon
 {
     public static class AsyncStreamReaderExtensions
     {

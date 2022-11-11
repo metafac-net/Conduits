@@ -1,13 +1,12 @@
-﻿using Conduits.Core;
-using Conduits.GrpcCommon;
+﻿using MetaFac.Conduits.GrpcCommon;
 using Grpc.Core;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 
-namespace Conduits.GrpcServer
+namespace MetaFac.Conduits.GrpcServer
 {
-    public class GrpcService : GrpcCommon.GrpcService.GrpcServiceBase
+    public class GrpcService : MetaFac.Conduits.GrpcCommon.GrpcService.GrpcServiceBase
     {
         private readonly ILogger<GrpcService> _logger;
         private readonly IConduitServer _server;

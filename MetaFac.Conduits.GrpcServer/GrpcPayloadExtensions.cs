@@ -1,9 +1,8 @@
-﻿
-using Conduits.GrpcCommon;
-using Google.Protobuf;
+﻿using Google.Protobuf;
+using MetaFac.Conduits.GrpcCommon;
 using System;
 
-namespace Conduits.GrpcServer
+namespace MetaFac.Conduits.GrpcServer
 {
     internal static class GrpcPayloadExtensions
     {

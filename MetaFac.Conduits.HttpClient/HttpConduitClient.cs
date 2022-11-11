@@ -1,10 +1,11 @@
-﻿using Conduits.Core;
+﻿using Conduits.HttpClient;
+using MetaFac.Conduits;
 using MetaFac.Platform;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Conduits.HttpClient
+namespace MetaFac.Conduits.HttpClient
 {
     public class HttpConduitClient : IDisposable, IConduitClient
     {

@@ -1,6 +1,7 @@
-﻿using System;
+﻿using Conduits.HttpClient;
+using System;
 
-namespace Conduits.HttpClient
+namespace MetaFac.Conduits.HttpClient
 {
     internal static class JsonPayloadExtensions
     {

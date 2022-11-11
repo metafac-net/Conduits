@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Conduits.Core
+namespace MetaFac.Conduits
 {
     public interface IConduitBase
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Conduits.Core
+namespace MetaFac.Conduits
 {
     public readonly struct CallContext
     {

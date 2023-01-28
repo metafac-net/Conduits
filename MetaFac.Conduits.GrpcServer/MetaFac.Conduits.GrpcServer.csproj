@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net6.0;net7.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>Copyright (c) 2022 MetaFac</Copyright>
+    <Copyright>Copyright (c) 2020-2023 MetaFac</Copyright>
     <Company>MetaFac</Company>
     <Authors>MetaFac Contributors</Authors>
     <LangVersion>latest</LangVersion>

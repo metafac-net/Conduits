@@ -4,7 +4,7 @@
     <!--todo: add net6.0 etc. when Swagger supports TargetFrameworks property-->
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>Copyright (c) 2022 MetaFac</Copyright>
+    <Copyright>Copyright (c) 2020-2023 MetaFac</Copyright>
     <Company>MetaFac</Company>
     <Authors>MetaFac Contributors</Authors>
     <LangVersion>latest</LangVersion>
@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MetaFac.Platform" Version="1.1.1" />
+    <PackageReference Include="MetaFac.Platform" Version="1.1.2" />
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="7.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

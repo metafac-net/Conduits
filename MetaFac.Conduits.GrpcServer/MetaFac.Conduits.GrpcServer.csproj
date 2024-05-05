@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net7.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>Copyright (c) 2020-2024 MetaFac</Copyright>
     <Company>MetaFac</Company>
@@ -16,11 +16,11 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <RepositoryUrl>https://dev.azure.com/MetaFac/CSR/_git/CG5</RepositoryUrl>
-    <PackageProjectUrl>https://dev.azure.com/MetaFac/CSR</PackageProjectUrl>
+    <RepositoryUrl>https://dev.azure.com/MetaFac/OSR/_git/Conduits</RepositoryUrl>
+    <PackageProjectUrl>https://dev.azure.com/MetaFac/OSR</PackageProjectUrl>
     <Description>Conduits gRPC server</Description>
     <Title>Package title</Title>
-	<Product>MetaFac.CG5</Product>
+	<Product>Conduits</Product>
   </PropertyGroup>
 
   <ItemGroup>

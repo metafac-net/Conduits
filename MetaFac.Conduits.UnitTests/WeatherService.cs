@@ -51,24 +51,16 @@ namespace MetaFac.Conduits.UnitTests
             _weatherHub
                 .GetOrAdd(location, (l) => new Subject<WeatherData>())
                 .Subscribe(
-                    async (w) => { await writer.WriteAsync(w); },
-                    (e) => { writer.Complete(e); },
-                    () => { writer.Complete(); },
+                    (w) => { writer.TryWrite(w); },
+                    (e) => { writer.TryComplete(e); },
+                    () => { writer.TryComplete(); },
                     token);
 
             var reader = channel.Reader;
-#if NET5_0_OR_GREATER
             await foreach (var response in reader.ReadAllAsync(token))
             {
                 yield return response;
             }
-#else
-            while (true)
-            {
-                var response = await reader.ReadAsync(token);
-                yield return response;
-            }
-#endif
         }
 
         public ValueTask UpdateWeather(WeatherData weather, CancellationToken token)

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net6.0;net7.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net6.0;net8.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>Copyright (c) 2020-2024 MetaFac</Copyright>
     <Company>MetaFac</Company>
@@ -16,8 +16,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <RepositoryUrl>https://dev.azure.com/MetaFac/OSR/_git/Conduits</RepositoryUrl>
-    <PackageProjectUrl>https://dev.azure.com/MetaFac/OSR</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/metafac-net/Conduits</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/metafac-net/Conduits</PackageProjectUrl>
     <Description>Conduits HTTP common types</Description>
     <Title>Package title</Title>
 	<Product>Conduits</Product>

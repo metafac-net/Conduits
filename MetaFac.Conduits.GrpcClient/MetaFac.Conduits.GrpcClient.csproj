@@ -31,14 +31,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Google.Protobuf" Version="3.27.1" />
-    <PackageReference Include="Grpc.Net.Client" Version="2.63.0" />
-    <PackageReference Include="Grpc.Tools" Version="2.64.0">
+    <PackageReference Include="Google.Protobuf" Version="3.27.3" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.65.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.65.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="MetaFac.Platform" Version="1.2.4" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.139">
+    <PackageReference Include="MetaFac.Platform" Version="1.4.3" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.141">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

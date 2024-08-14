@@ -38,12 +38,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MetaFac.Platform" Version="1.2.4" />
-    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="8.0.6">
+    <PackageReference Include="MetaFac.Platform" Version="1.4.3" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.139">
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.6.141">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

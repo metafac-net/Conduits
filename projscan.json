@@ -1,4 +1,7 @@
 {
-  "CompanyName": "MetaFac",
-  "ProductName": "Conduits"
+  "ProductName": "Conduits",
+  "ExemptionCodes": [
+    "targetframework_notexists",
+    "targetframeworks_exists"
+  ]
 }

@@ -1,4 +1,3 @@
-using FluentAssertions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -6,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Xunit;
 using MetaFac.Conduits.Testing;
+using Shouldly;
 
 namespace MetaFac.Conduits.UnitTests
 {
@@ -22,8 +22,8 @@ namespace MetaFac.Conduits.UnitTests
                 using var conduitClient = new FakeConduitClient(conduitServer);
                 using var client = new WeatherClient(conduitClient, true);
                 var weather = await client.GetWeather("Brisbane", cts.Token);
-                weather.Should().NotBeNull();
-                weather.Tag.Should().Be(WeatherTag.NotFound);
+                weather.ShouldNotBeNull();
+                weather.Tag.ShouldBe(WeatherTag.NotFound);
             }
             // repeat
             {
@@ -33,7 +33,7 @@ namespace MetaFac.Conduits.UnitTests
                              {
                                  var weather = await client.GetWeather("Brisbane", cts.Token);
                              });
-                ex.Message.Should().StartWith("Cannot access a disposed object.");
+                ex.Message.ShouldStartWith("Cannot access a disposed object.");
             }
         }
 
@@ -48,13 +48,13 @@ namespace MetaFac.Conduits.UnitTests
                 using var client = new WeatherClient(conduitClient);
                 await client.UpdateWeather(new WeatherData(WeatherTag.WeatherData, "Brisbane", 31, DateTime.UtcNow), cts.Token);
                 var weather = await client.GetWeather("Brisbane", cts.Token);
-                weather.TemperatureC.Should().Be(31.0D);
+                weather.TemperatureC.ShouldBe(31.0D);
             }
             // repeat
             {
                 using var client = new WeatherClient(new FakeConduitClient(conduitServer));
                 var weather = await client.GetWeather("Brisbane", cts.Token);
-                weather.TemperatureC.Should().Be(31.0D);
+                weather.TemperatureC.ShouldBe(31.0D);
             }
         }
 
@@ -102,10 +102,10 @@ namespace MetaFac.Conduits.UnitTests
                     await client.UpdateWeather(new WeatherData(WeatherTag.WeatherData, "Brisbane", 32, DateTime.UtcNow), cts1.Token);
                 });
                 await Task.WhenAll(subscriber, publisher);
-                fault.Should().BeNull();
-                responses.Count.Should().Be(2);
-                responses[0].TemperatureC.Should().Be(31.0D);
-                responses[1].TemperatureC.Should().Be(32.0D);
+                fault.ShouldBeNull();
+                responses.Count.ShouldBe(2);
+                responses[0].TemperatureC.ShouldBe(31.0D);
+                responses[1].TemperatureC.ShouldBe(32.0D);
             }
             // repeat
             {
@@ -137,9 +137,9 @@ namespace MetaFac.Conduits.UnitTests
                 {
                     fault = ex;
                 }
-                fault.Should().BeNull();
-                responses.Count.Should().Be(1);
-                responses[0].TemperatureC.Should().Be(32.0D);
+                fault.ShouldBeNull();
+                responses.Count.ShouldBe(1);
+                responses[0].TemperatureC.ShouldBe(32.0D);
             }
         }
     }

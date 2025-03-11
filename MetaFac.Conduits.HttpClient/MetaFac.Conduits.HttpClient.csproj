@@ -4,7 +4,7 @@
     <!--todo: add net8.0 etc. when Swagger supports TargetFrameworks property-->
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>Copyright (c) 2020-2024 MetaFac</Copyright>
+    <Copyright>Copyright (c) 2020-2025 MetaFac</Copyright>
     <Company>MetaFac</Company>
     <Authors>MetaFac Contributors</Authors>
     <LangVersion>latest</LangVersion>

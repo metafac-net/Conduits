@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net8.0;net9.0;net10.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net8.0;net10.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>Copyright (c) 2020-2025 MetaFac</Copyright>
+    <Copyright>Copyright (c) 2020-2026 MetaFac</Copyright>
     <Company>MetaFac</Company>
     <Authors>MetaFac Contributors</Authors>
     <LangVersion>latest</LangVersion>

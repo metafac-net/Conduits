@@ -38,16 +38,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MetaFac.Platform" Version="2.0.8" />
+    <PackageReference Include="MetaFac.Platform" Version="2.2.8" />
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="8.0.17">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.7.115">
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.10.91">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
     <PackageReference Include="NSwag.ApiDescription.Client" Version="13.20.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
